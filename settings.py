@@ -35,10 +35,12 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",        # musi być przed auth
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    # musi być przed auth
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",     # musi być po sessions
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    # musi być po sessions
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]

@@ -25,7 +25,7 @@ def create_order(
     return order
 
 
-def get_orders(username: Optional[str] = None):
+def get_orders(username: Optional[str] = None) -> list[Order]:
     orders = Order.objects.all()
     if username:
         orders = orders.filter(user__username=username)
